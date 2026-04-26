@@ -21,7 +21,7 @@
 encoding: utf-8 # Make sure the encoding is right
 title: "Kirill`s Yurgulskiy Blog About Computers"
 logo: "/assets/logo.svg" # Site logo
-logo_header: "/assets/logo_header.svg" # Site header logo
+logo_header: "/assets/logo_header.png" # Site header logo
 email: kirill.yurgulskij88@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this

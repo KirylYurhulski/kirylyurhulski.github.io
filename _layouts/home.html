@@ -9,11 +9,9 @@ layout: default
 	<div class="content">
       <div class="gcse-searchbox-only"></div>
 
-    <article class="article  article--page  typeset">
-
-			{{ collectiondata.description | markdownify }}
-
-    </article>
+      <article class="article  article--page  typeset">
+        {{ collectiondata.description | markdownify }}
+      </article>
 
     {% include post-list.html %}
 
