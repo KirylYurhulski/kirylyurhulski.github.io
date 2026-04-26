@@ -37,6 +37,7 @@ body {
 .header {
   @include flex(0, 0, auto);
   background: darken($backgroundColour, 10%);
+  margin-bottom: 1rem;
 }
 
 .logo {
@@ -69,6 +70,10 @@ body {
     color: $captionColour;
     text-align: center;
   }
+}
+
+.search {
+  width: 20%;
 }
 
 .pagination {

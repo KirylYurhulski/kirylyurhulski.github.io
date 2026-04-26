@@ -21,6 +21,7 @@
 encoding: utf-8 # Make sure the encoding is right
 title: "Kirill`s Yurgulskiy Blog About Computers"
 logo: "/assets/logo.svg" # Site logo
+logo_header: "/assets/logo_header.svg" # Site header logo
 email: kirill.yurgulskij88@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -32,6 +33,7 @@ github_username:  kirylyurhulski
 
 # Build settings
 #theme: minima
+theme: garth-jekyll-theme
 plugins:
 #  - jekyll-feed
   - jekyll-paginate
@@ -59,3 +61,32 @@ plugins:
 # Gem settings
 paginate: 2 # jekyll-paginate > items per page
 paginate_path: "/page:num/" # jekyll-paginate > blog page
+
+# 4. Jekyll settings
+sass:
+  style: compressed # Style compression
+permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
+excerpt_separator: <!-- more --> # Marks end of excerpt in posts
+timezone: Europe/London # Timezone for blog posts and alike
+
+# 5. Collections
+collections:
+  posts:
+    title: Home # Needed for Siteleaf
+    output: true
+    description: "This is merely a demo, find out more [about Garth](about)" # The post list page content
+
+# 6. Jekyll collections settings
+defaults:
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: page # Default layout
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post # Default layout
